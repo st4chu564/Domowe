@@ -9,12 +9,12 @@ public class Main {
     public static void main(String[] args) {
         int min, max;
         Scanner read = new Scanner(System.in);
-        System.out.println("Podaj wielkosc tablicy: ");
+        System.out.print("Podaj wielkosc tablicy: ");
         int size = read.nextInt();
         int tab[] = new int[size];
-        System.out.println("Podaj minimalna wartosc: ");
+        System.out.print("Podaj minimalna wartosc: ");
         min = read.nextInt();
-        System.out.println("Podaj maksymalna wartosc: ");
+        System.out.print("Podaj maksymalna wartosc: ");
         max = read.nextInt();
         for(int i = 0; i < tab.length; i++){
             tab[i] = ThreadLocalRandom.current().nextInt(min - 5, max + 5);
